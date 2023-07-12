@@ -5,21 +5,24 @@
                 v-model="inputValue"
                 class="input-text"
                 placeholder="Enter text..."
+                @input="$emit('inputValue', inputValue)"
         />
     </div>
 </template>
 
 <script>
-export default {
+import {defineComponent} from 'vue'
+export default defineComponent({
+    name: 'InputText',
     data() {
         return {
             inputValue: ''
         };
-    }
-};
+    },
+});
 </script>
 
-<style>
+<style scoped>
 .input-container {
     width: 300px;
 }
