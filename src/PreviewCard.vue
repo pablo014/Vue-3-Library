@@ -53,4 +53,10 @@ export default defineComponent({
 #image {
     border-radius: 10px;
 }
+#title {
+    font-size: 30px;
+}
+#summary {
+    font-size: 15px;
+}
 </style>
