@@ -5,7 +5,9 @@
                 :disabled="currentPage === 1"
                 @click="goToPage(currentPage - 1)"
         >
-            Prev
+            <slot name="prev">
+                Prev
+            </slot>
         </button>
 
         <div class="pagination-pages">
@@ -15,7 +17,9 @@
                     :class="['pagination-page', { active: page === currentPage }]"
                     @click="goToPage(page)"
             >
-                {{ page }}
+                <slot :name=`${page}-page`>
+                    {{ page }}
+                </slot>
             </button>
         </div>
 
@@ -24,7 +28,9 @@
                 :disabled="currentPage === totalPages"
                 @click="goToPage(currentPage + 1)"
         >
-            Next
+            <slot name="next">
+                Next
+            </slot>
         </button>
     </div>
 </template>

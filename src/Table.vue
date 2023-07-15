@@ -2,12 +2,24 @@
     <table class="table">
         <thead>
         <tr>
-            <th v-for="column in columns" :key="column.key">{{ column.label }}</th>
+            <th v-for="column in columns" :key="column.key">
+                <slot :name="column.label">
+                    <slot name="label">
+                        {{ column.label }}
+                    </slot>
+                </slot>
+            </th>
         </tr>
         </thead>
         <tbody>
         <tr v-for="item in items" :key="item.id">
-            <td v-for="column in columns" :key="column.key">{{ item[column.key] }}</td>
+            <td v-for="column in columns" :key="column.key">
+                <slot :name="column.key">
+                    <slot name="column">
+                        {{ item[column.key] }}
+                    </slot>
+                </slot>
+            </td>
         </tr>
         </tbody>
     </table>
