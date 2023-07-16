@@ -22,7 +22,7 @@ export default defineComponent({
 });
 </script>
 
-<style scoped>
+<style>
 .input-container {
     width: 300px;
 }

@@ -17,7 +17,7 @@
                     :class="['pagination-page', { active: page === currentPage }]"
                     @click="goToPage(page)"
             >
-                <slot :name=`${page}-page` :page="page">
+                <slot :name="`${page}-page`" :page="page">
                     {{ page }}
                 </slot>
             </button>

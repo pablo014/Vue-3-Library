@@ -1,0 +1,178 @@
+
+.input-container {
+    width: 300px;
+}
+.input-text {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.input-text:focus {
+    outline: none;
+    border-color: dodgerblue;
+}
+
+
+#container[data-v-1447a38f] {
+    border-radius: 10px;
+    border-color: #9E9E9E;
+    border-width: 3px;
+    cursor: pointer;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 500ms;
+}
+#container[data-v-1447a38f]:hover {
+    scale: 110%;
+    box-shadow: 0 10px 5px darkgray;
+}
+#image[data-v-1447a38f] {
+    border-radius: 10px;
+}
+#title[data-v-1447a38f] {
+    font-size: 30px;
+}
+#summary[data-v-1447a38f] {
+    font-size: 15px;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.pagination-button {
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+}
+.pagination-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.pagination-pages {
+    display: flex;
+}
+.pagination-page {
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+}
+.pagination-page.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.table th,
+.table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.table th {
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
+.table tr:hover {
+    background-color: #f9f9f9;
+}
+.table td {
+    text-align: left;
+}
+
+
+.button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.button-default {
+    background-color: #ccc;
+    color: #333;
+    border: none;
+}
+.button-primary {
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+}
+.button-secondary {
+    background-color: white;
+    color: dodgerblue;
+    border: 1px solid dodgerblue;
+}
+.button-small {
+    font-size: 12px;
+    padding: 6px 12px;
+}
+.button-medium {
+    font-size: 16px;
+    padding: 10px 20px;
+}
+.button-large {
+    font-size: 20px;
+    padding: 14px 28px;
+}
+
+
+.accordion {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.accordion-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+}
+.accordion-content {
+    padding: 10px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+.accordion-transition-enter-active,
+.accordion-transition-leave-active {
+    transition: max-height 0.3s ease-in-out;
+}
+.accordion-transition-enter,
+.accordion-transition-leave-to {
+    max-height: 0;
+}
+
+
+.form-dropdown {
+    margin-bottom: 20px;
+}
+.form-dropdown-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.form-dropdown-select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
