@@ -12,6 +12,7 @@ import RadioGroup from "./RadioGroup.vue";
 import Dialog from "./Dialog.vue";
 import Carousel from "./Carousel.vue";
 import NavBar from "./NavBar.vue";
+import Checkbox from "./Checkbox.vue";
 export default {
     InputTextarea,
     InputText,
@@ -26,5 +27,6 @@ export default {
     RadioButton,
     Dialog,
     Carousel,
-    NavBar
+    NavBar,
+    Checkbox
 }
