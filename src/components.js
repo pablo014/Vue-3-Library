@@ -9,5 +9,6 @@ import Dropdown from "./Dropdown.vue";
 import FileUpload from "./FileUpload.vue";
 import RadioButton from "./RadioButton.vue";
 import RadioGroup from "./RadioGroup.vue";
+import Dialog from "./Dialog.vue";
 
-export default { InputTextarea, InputText, PreviewCard, Pagination, Table, Button, Accordion, Dropdown, FileUpload, RadioGroup, RadioButton }
+export default { InputTextarea, InputText, PreviewCard, Pagination, Table, Button, Accordion, Dropdown, FileUpload, RadioGroup, RadioButton, Dialog }
