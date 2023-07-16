@@ -26,13 +26,19 @@ export default defineComponent({
 
 <template>
     <a id="container" :href="url">
-        <img :src="image" :alt="title" id="image"/>
-        <div id="title">
-            {{ title }}
-        </div>
-        <div id="summary">
-            {{ summary }}
-        </div>
+        <slot name="image" :image="image">
+            <img :src="image" :alt="title" id="image"/>
+        </slot>
+        <slot name="title" :title="title">
+            <div id="title">
+                {{ title }}
+            </div>
+        </slot>
+        <slot name="summary" :summary="summary">
+            <div id="summary">
+                {{ summary }}
+            </div>
+        </slot>
     </a>
 </template>
 
