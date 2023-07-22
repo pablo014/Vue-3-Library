@@ -19,11 +19,6 @@
 
 <script>
 export default {
-    data() {
-        return {
-            isOpen: false
-        };
-    },
     props: {
         title: {
             type: String,
@@ -36,15 +31,15 @@ export default {
         confirmText: {
             type: String,
             default: 'Confirm'
+        },
+        isOpen: {
+            type: Boolean,
+            default: false,
         }
     },
     methods: {
-        openDialog() {
-            this.isOpen = true;
-            document.body.classList.add('dialog-open');
-        },
         closeDialog() {
-            this.isOpen = false;
+            this.$emit('close');
             document.body.classList.remove('dialog-open');
         },
         confirmDialog() {
