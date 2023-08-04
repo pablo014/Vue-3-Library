@@ -2,10 +2,10 @@
     <div class="input-container">
         <input
                 type="text"
-                v-model="inputValue"
+                v-model="modelValue"
                 class="input-text"
                 placeholder="Enter text..."
-                @input="$emit('inputValue', inputValue)"
+                @input="$emit('update:modelValue', inputValue)"
         />
     </div>
 </template>
@@ -14,6 +14,10 @@
 import {defineComponent} from 'vue'
 export default defineComponent({
     name: 'InputText',
+    props: {
+        modelValue: String,
+    },
+    emits: ['update:modelValue'],
     data() {
         return {
             inputValue: ''
